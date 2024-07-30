@@ -80,6 +80,7 @@ p {
 .address {
   color: #434455;
   font-size: 16px;
+  font-style: normal;
 }
 .address-link {
   color: inherit;
@@ -132,6 +133,7 @@ p {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .sub-header {
@@ -139,6 +141,21 @@ p {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.team-section {
+  background-color: #f4f4fd;
+}
+.team-member {
+  background-color: #ffffff;
 }
 
 .footer {
