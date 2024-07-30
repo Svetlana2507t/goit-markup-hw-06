@@ -1,0 +1,152 @@
+body {
+  background-color: #ffffff;
+  color: #434455;
+  font-family: 'Roboto', sans-serif;
+  /* second-family: 'Raleway', sans-serif; */
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  /* color: #434455; */
+}
+
+/* #region Header */
+.header {
+}
+.nav {
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  /* line-height: 1.16667; */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  /* color: #4d5ae5; */
+}
+
+.logo-span {
+  color: #2e2f42;
+}
+.logo-span-footer {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+.menu {
+  font-size: 16px;
+}
+.menu-item {
+}
+.menu-link {
+  font-weight: 500;
+  /* font-size: 16px; */
+  font-size: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+  color: #404bbf;
+}
+
+.menu-link:active {
+  text-decoration: underline;
+}
+
+.address {
+  color: #434455;
+  font-size: 16px;
+}
+.address-link {
+  color: inherit;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+
+/* #endregion Header */
+
+/* #region Section Hero */
+.hero {
+  background-color: #2e2f42;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+.hero-btn {
+  color: #fff;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+/* #endregion Section Hero */
+
+.header,
+.sub-header {
+  color: #2e2f42;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.sub-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer-p {
+  /* line-height: 1.5;
+  letter-spacing: 0.02em; */
+  color: #f4f4fd;
+}
