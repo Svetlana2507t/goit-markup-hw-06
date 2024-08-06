@@ -72,6 +72,7 @@ p {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  margin-left: 0;
 }
 
 .logo-span {
@@ -370,6 +371,7 @@ p {
   text-align: left;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .products-sub-header {
   margin-bottom: 8px;
