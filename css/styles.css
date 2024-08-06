@@ -5,9 +5,23 @@ body {
   /* second-family: 'Raleway', sans-serif; */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -25,6 +39,19 @@ p {
   /* color: #434455; */
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* #region Header */
 .header {
 }
@@ -65,6 +92,9 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -83,6 +113,9 @@ p {
   font-style: normal;
 }
 .address-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: inherit;
   font-style: normal;
   font-weight: normal;
@@ -115,12 +148,45 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  text-align: center;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
 }
 /* #endregion Section Hero */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 
 .header,
 .sub-header {
@@ -142,6 +208,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 
 .description {
@@ -151,19 +218,150 @@ p {
   color: #434455;
 }
 
+/* #region Hero Section */
+
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 164px;
+  padding-left: 472px;
+  padding-right: 472px;
+}
+
+/* #endregion Hero Section */
+
+/* #region Section Benefits */
+
+.benefits {
+  padding-top: 144px;
+  padding-bottom: 121px;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+
+/* .benefits-container {
+  display: block;
+  width: 1128px;
+} */
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.benefits-list-item {
+  width: calc((100% - 3 * 24) / 4);
+  /* width: 264px; */
+  /* width: calc((100% - 24 * 3) / 4); */
+}
+
+/* #endregion Section Benefits */
+
+/* #region Team section */
+
 .team-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.team-member {
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team-members-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.team-members-list-item {
   background-color: #ffffff;
+  width: calc((100% - 24 * 3) / 4);
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  /* width: 264px; */
+  height: 380px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
+.team-text {
+  display: block;
+  margin: 32px 16px;
+}
+.team-sub-header,
+.team-descr {
+  text-align: center;
+  text-transform: capitalize;
+}
+.team-img {
+  display: inline-block;
+  min-width: 100%;
+  object-fit: scale-down;
+}
+/* #endregion Team section */
+
+/* #region Portfolio section */
+.portfolio-section {
+  padding: 120px 16px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  justify-content: center;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.products-list-item {
+  width: calc((100% - 48) / 3);
+}
+.products-list-img {
+  display: block;
+  min-width: 100%;
+  object-fit: scale-down;
+}
+.products-text {
+  display: block;
+  text-align: left;
+  padding: 32px 16px;
+}
+.products-sub-header {
+  margin-bottom: 8px;
+}
+.products-descr {
+}
+
+/* #endregion Portfolio section */
 
 .footer {
   background-color: #2e2f42;
+}
+
+.footer-container {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 264px;
 }
 
 .footer-p {
   /* line-height: 1.5;
   letter-spacing: 0.02em; */
   color: #f4f4fd;
+  margin-top: 16px;
 }
