@@ -263,6 +263,8 @@ p {
 }
 
 .benefits-container {
+  /* padding: 120px 0 120px 0;
+  border-top: none;*/
 }
 
 .benefits-list {
@@ -286,6 +288,10 @@ p {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.team-container {
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -314,7 +320,7 @@ p {
 
 .team-text {
   display: block;
-  margin: 32px 0px;
+  padding: 32px 0;
 }
 .team-sub-header,
 .team-descr {
@@ -330,7 +336,8 @@ p {
 
 /* #region Portfolio section */
 .portfolio-section {
-  padding: 120px 16px;
+  padding: 120px 0 120px 0;
+  border-top: none;
 }
 
 .products-list {
