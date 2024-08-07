@@ -179,9 +179,10 @@ p {
 /* #endregion Section Hero */
 
 .container {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   padding: 0 15px;
+  max-width: 1158px;
 
   /* padding-right: 16px;
   padding-left: 16px; */
@@ -197,7 +198,7 @@ p {
 .nav {
   display: flex;
   align-items: center;
-  gap: 76px;
+  /* gap: 76px; */
 }
 
 .menu {
@@ -262,8 +263,7 @@ p {
 }
 
 .benefits-container {
-  /* padding: 120px 0 120px 0;
-  border-top: none;*/
+  padding: 0 15px;
 }
 
 .benefits-list {
@@ -289,6 +289,7 @@ p {
 }
 
 .team-container {
+  padding: 0 15px;
 }
 
 .team-title {
@@ -383,6 +384,8 @@ p {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+
+  min-width: 1158px;
 }
 
 .footer-link {
@@ -403,5 +406,5 @@ p {
   letter-spacing: 0.02em; */
   display: block;
   color: #f4f4fd;
-  max-width: 254px;
+  max-width: 264px;
 }
