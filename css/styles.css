@@ -173,16 +173,15 @@ p {
 /* #region Section Hero */
 .hero {
   background-color: #2e2f42;
-
   background-image: linear-gradient(rgba(146, 146, 148, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
   /* background-size: 1140px 600px; */
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1140px;
-  /* background-size: cover; */
-
   padding: 188px 0;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
 }
 .hero-title {
   font-weight: 700;
@@ -224,7 +223,8 @@ p {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1158px;
+  /* max-width: 1158px; */
+  max-width: 1140px;
 
   /* padding-right: 16px;
   padding-left: 16px; */
@@ -289,6 +289,8 @@ p {
 /* #region Hero Section */
 
 .hero-container {
+  /* background-size: cover; */
+
   /* padding-top: 188px;
   padding-bottom: 164px;
   padding-left: 472px;
