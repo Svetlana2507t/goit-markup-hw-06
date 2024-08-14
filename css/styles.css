@@ -427,7 +427,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .team-text {
   display: block;
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 .team-sub-header,
 .team-descr {
@@ -446,7 +446,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   display: flex;
   gap: 24px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-links-list {
@@ -459,7 +459,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .team-icon-link {
   display: flex;
   cursor: pointer;
-  fill: #f4f4fd;
+  /* fill: #f4f4fd; */
   border-radius: 50%;
   justify-content: center;
   align-items: center;
