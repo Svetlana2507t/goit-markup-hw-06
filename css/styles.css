@@ -442,10 +442,16 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   text-align: center;
   color: #434455;
 }
+.team-soc-links-list {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  justify-content: space-between;
+}
 
 .social-links-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   width: 100%;
   justify-content: space-between;
 }
