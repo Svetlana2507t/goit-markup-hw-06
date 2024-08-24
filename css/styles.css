@@ -336,7 +336,37 @@ p {
 .benefits-container {
   padding: 0 15px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  
+.benefits {
+  padding: 96px 0;
+          }  
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  min-width: 320px;
+  max-width: 767px;
+            }
 
+  .benefits-container {
+  /* padding: 0 15px; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: lightpink;
+ 
+            }
+  .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+
+  gap: 24px;
+            }
+  .benefits-list-item {
+  width: calc((100% - 24px));
+}
+}
 .icon-wrap {
   display: flex;
   align-items: center;
