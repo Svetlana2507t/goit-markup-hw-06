@@ -13,20 +13,34 @@
   .container {
     margin: 0 auto;
     padding: 0 16px;
-    max-width: 767px;
+    max-width: 100%;
   }
 
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 320px;
-    margin: 0;
-    padding: 16px 16px;
+    /* max-width: 320px; */
     width: 100%;
+    margin: 0;
+    padding: 16px;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 2px 1px 0 rgba(46, 47, 66, 0.08);
     height: 100%;
+    /* width: 100vw; */
   }
 
+  .header-section .container.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Use 100% to make the container span the full width */
+    margin: 0; /* Remove margin for the header's container only */
+    padding: 16px; /* Uniform padding for spacing inside the container */
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 2px 1px 0 rgba(46, 47, 66, 0.08); /* Keep the box-shadow */
+    box-sizing: border-box; /* Ensure padding is included within the width */
+  }
   .nav > .menu {
     display: none;
   }
@@ -51,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px; /* Ensure the button's size matches the SVG viewBox size */
+    width: 24px;
     height: 24px;
   }
 
@@ -77,6 +91,79 @@
   }
 }
 /* #endregion header  */
+
+/* #region Mob-Menu Section for mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mob-menu-section {
+    width: 100vw;
+    height: 100wh;
+    /* position: fixed;
+    top-0; */
+  }
+  .mob-menu-item {
+  }
+
+  .mob-menu-item .menu-first-link {
+    color: #4d5ae5;
+  }
+  .mob-address {
+  }
+  .address-list {
+  }
+  .address-list-item {
+  }
+  .address-link {
+  }
+
+  .menu-link {
+    display: block;
+    /* position: relative; */
+    font-weight: 500;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-transform: capitalize;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mob-address {
+    color: #434455;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+
+    /* line-height: 24px; */
+    /* line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4d5ae5; */
+  }
+  .address-list-item {
+    box-sizing: content-box;
+    position: relative;
+  }
+
+  .address-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: inherit;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
+  }
+}
+/* #endregion Mob-Menu Section for mobile */
 
 /* #region Hero  */
 
@@ -117,6 +204,7 @@
   .container {
     margin: 0 auto;
     padding: 0 16px;
+    /* width: 100vw; */
     max-width: 320px;
   }
   .benefits-container {
@@ -162,11 +250,12 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  /* .container {
+  .container {
     margin: 0 auto;
     padding: 0 16px;
-    max-width: 767px;
-  } */
+    /* width: 100vw; */
+    max-width: 320px;
+  }
 
   .team-container {
     /* padding: 0 16px; */
@@ -180,6 +269,13 @@
     gap: 72px;
     align-content: center;
     justify-content: center;
+  }
+
+  .team-img {
+    display: block;
+    width: 100%;
+    /* object-fit: scale-down; */
+    object-fit: cover;
   }
 
   .team-text {
