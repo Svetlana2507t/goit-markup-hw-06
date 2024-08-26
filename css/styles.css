@@ -183,10 +183,38 @@ p {
   color: #404bbf;
 }
 
+
+
+.header-section {
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1158px;
+  /* padding-right: 16px;
+  padding-left: 16px; */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+/* 
+.menu-nav-button {
+  display: none;
+} */
+
 /* #endregion Header */
 
 /* #region Section Hero */
-
 .hero {
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -202,30 +230,31 @@ p {
   max-width: 1440px; /* background-size: 1140px 600px; */
 }
 
-.header-section {
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-2x.jpg);
+    }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/dark-bg-tablet.jpg);
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {    
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/dark-bg-tablet-2x.jpg);
+
+    }
+  } 
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  /* max-width: 1140px; */
-  max-width: 1158px;
-
-  /* padding-right: 16px;
-  padding-left: 16px; */
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1158px;
-  margin: 0 auto;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 2px 1px 0 rgba(46, 47, 66, 0.08);
-}
 
 .hero-title {
   font-weight: 700;
@@ -318,11 +347,13 @@ p {
 
 .hero-container {
   /* background-size: cover; */
+ 
+}
 
-  /* padding-top: 188px;
-  padding-bottom: 164px;
-  padding-left: 472px;
-  padding-right: 472px; */
+.hero-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
 }
 
 /* #endregion Hero Section */
@@ -374,45 +405,13 @@ p {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  
-.benefits {
-  padding: 96px 0;
-          }  
-.container {
-  margin: 0 auto;
-  padding: 0 16px;
-  min-width: 320px;
-  max-width: 767px;
-          }
-  .benefits-container {
-  /* padding: 0 15px; */
-  display: flex;
-  justify-content: center;
-  width: 100%;
-          }
-  .benefits-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 8px;
-  gap: 8px;
-            }
-  .benefits-list-item {
-  width: calc((100% - 2*16px - 8px));
-  margin-bottom: 109px;
-            }
-  .sub-header {
-  font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 8px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-align: center;
+
+@media screen and (min-width: 768px) and (max-width: 1557px) {
+  .container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-.icon-wrap {
-  display: none;
-}
 }
 
 /* #endregion Section Benefits */
@@ -483,13 +482,6 @@ p {
   gap: 24px;
   width: 100%;
   justify-content: center;
-}
-
-.social-links-list {
-  display: flex;
-  gap: 16px;
-  width: 100%;
-  justify-content: space-between;
 }
 
 .team-icon-link {
@@ -632,6 +624,15 @@ p {
   max-width: 264px;
   margin-right: 120px;
 }
+
+
+.social-links-list {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  justify-content: space-between;
+}
+
 
 .footer-soc-links-cont {
 }
@@ -994,3 +995,14 @@ p {
 }
 
 /* #endregion Backdrop Modal Window */
+
+/* #region Backdrop modal for tablet*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+/* #endregion Backdrop Modal for tablet*/
