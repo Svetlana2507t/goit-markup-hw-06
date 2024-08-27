@@ -13,7 +13,8 @@
   .container {
     margin: 0 auto;
     padding: 0 16px;
-    max-width: 100%;
+    /* max-width: 100%; */ */
+    width: 100%;
   }
 
   .header-container {
@@ -29,13 +30,17 @@
     height: 100%;
     /* width: 100vw; */
   }
-
-  .header-section .container.header-container {
+  /* 
+  .header-section > .container {
+    width: 100vw;
+  } */
+  .header-section > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%; /* Use 100% to make the container span the full width */
     margin: 0; /* Remove margin for the header's container only */
+    max-width: none;
     padding: 16px; /* Uniform padding for spacing inside the container */
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
       0 2px 1px 0 rgba(46, 47, 66, 0.08); /* Keep the box-shadow */
