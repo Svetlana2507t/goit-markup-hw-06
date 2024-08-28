@@ -277,7 +277,8 @@
   }
 
   .benefits-list-item {
-    width: calc((100% - 2 * 16px - 8px));
+    width: 100%;
+    /* width: calc((100% - 2 * 16px - 8px)); */
     margin-bottom: 109px;
   }
 
